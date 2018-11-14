@@ -5,7 +5,6 @@ body{
 .container{
     height: 100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 .nav-bar{
@@ -14,12 +13,10 @@ body{
     justify-content:flex-end;
 }
 .nav-bar .navbar-wrapper{
-    display: flex;
 }
 .nav-bar .navbar-wrapper ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
 }
 .nav-bar .navbar-wrapper ul li{
    padding: 0.8rem;
@@ -42,7 +39,6 @@ body{
 }
 .content{
     display: flex;
-    justify-content: center;
     flex:1;
 }
 .content .content-wrapper{
@@ -50,7 +46,6 @@ body{
 }
 .content .content-wrapper .content-aside1{
     flex:2;
-    flex-direction: column;
     background-color: #ffd700;
 }
 .content .content-wrapper .content-aside1 h2{
@@ -59,12 +54,9 @@ body{
 }
 .content .content-wrapper .content-main{
     flex:7;
-    flex-direction: column;
-    background-color: #00bfff;
-    
+    background-color: #00bfff;  
 }
 .content .content-wrapper .content-main p{
-    text-align: left;
     font-size: 1rem;
     padding: 0 1rem;
     font-weight: bold;
@@ -73,7 +65,6 @@ body{
 }
 .content .content-wrapper .content-aside2{
     flex:2;
-    flex-direction: column;
     background-color: #ff69b4;
 }
 .content .content-wrapper .content-aside2 h2{
@@ -86,33 +77,27 @@ body{
     justify-content: center;
 }
 .footer h2{
-    display: flex;
-    background-color: #90ee90;
     font-size: 1.2rem;
     text-transform: capitalize;
 }
-@media all and (max-width:800px){
+/* @media all and (max-width:850px){
+     .container {
+        height: auto;      
+    }
+}  */
+@media all and (max-width:820px){
     .container {
         height: auto;      
     }
     .nav-bar{
-        display: flex;
         justify-content: center;
     }
     .nav-bar .navbar-wrapper ul{
-        display: flex;
         flex-direction: column;  
         align-items: center;
         padding: 0;
     }
-    .content{
-        display: flex;
-        flex-direction: column;
-        height:auto;
-
-    }
     .content .content-wrapper{
-        display: flex;
         flex-direction: column;
     }
     .content .content-wrapper .content-main{
@@ -127,29 +112,6 @@ body{
     }
 }
 @media all and (max-width:500px){
-    .container {
-        height: auto;      
-    }
-    .nav-bar{
-        display: flex;
-        justify-content: center;
-    }
-    .nav-bar .navbar-wrapper ul{
-        display: flex;
-        flex-direction: column;  
-        align-items: center;
-        padding: 0;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
-        height:auto;
-
-    }
-    .content .content-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
     .content .content-wrapper .content-main{
        flex: 3 auto;
         order: 1;
